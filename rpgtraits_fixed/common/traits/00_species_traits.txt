@@ -1198,7 +1198,7 @@ trait_resilient2 = {
 		army_morale = 1
 		pop_fortification_defense = 1
 	}
-	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" trait_resilient1 "trait_resilient3" }
 	allowed_archetypes = { BIOLOGICAL }
 }
 trait_resilient3 = {
@@ -1214,7 +1214,7 @@ trait_resilient3 = {
 		army_morale = 8
 		pop_fortification_defense = 2
 	}
-	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" trait_resilient1 }
 	allowed_archetypes = { BIOLOGICAL }
 }
 
@@ -1361,7 +1361,7 @@ trait_custom_race = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_custom.dds"
 	opposites = {  }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	modifier = {
 	}
 }
