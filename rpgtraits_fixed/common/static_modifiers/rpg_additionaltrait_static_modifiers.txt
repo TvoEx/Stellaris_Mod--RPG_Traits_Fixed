@@ -102,6 +102,10 @@ trait_robo_titanic = {
 	# huge storages
 	max_minerals = 50000
 	max_energy = 50000
+	
+	country_resource_physics_research_mult = -5
+	country_resource_society_research_mult = -5
+	country_resource_engineering_research_mult = -5
 }
 
 trait_airborne = {
@@ -286,6 +290,10 @@ trait_robo_tiny = {
 	# tiny storages
 	#max_minerals = -1000
 	#max_energy = -1000
+	
+	country_resource_physics_research_mult = +0.8
+	country_resource_society_research_mult = +0.8
+	country_resource_engineering_research_mult = +0.8
 }
 
 trait_positive_doom = {
