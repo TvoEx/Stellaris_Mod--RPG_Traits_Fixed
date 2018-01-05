@@ -38,6 +38,7 @@ on_press_begin = {
 		trait.24
 		trait.25
 		trait.26
+		trait.27
 		trait.1601
 		trait.1701
 	}

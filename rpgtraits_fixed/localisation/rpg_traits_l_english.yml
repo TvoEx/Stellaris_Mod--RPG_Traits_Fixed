@@ -360,6 +360,9 @@
  trait_living_planet:0 "Living Planet"
  trait_living_planet_desc:0 "§LThis organism encompasses its entire homeworld and is ingrained with it. It *is* the planet and the planet *is* the organism. Single-minded and in perfect unity; the Living Planet does not tolerate other species or planets to exist.\n\nA single, powerful homeworld for the entire game. Cannot colonize other planets. Cannot annex planets. Cannot accept xenos. No migration. Upon annexation, enemy planets are permanently destroyed.§!\n"
  
+ trait_robo_planet:0 "Living Planet"
+ trait_robo_planet_desc:0 "§LThis machine encompasses its entire homeworld and is ingrained with it. It *is* the planet and the planet *is* the machine. Single-minded and in perfect unity; the Living Planet does not tolerate other species or planets to exist.\n\nA single, powerful homeworld for the entire game. Cannot colonize other planets. Cannot annex planets. Cannot accept xenos. No migration. Upon annexation, enemy planets are permanently destroyed.§!\n"
+ 
  trait_cyborg:0 "Cyborgs"
  trait_cyborg_desc:0 "§LEven before discovering FTL travel, this species experimented with cybernetics, and long since they have all started replacing their organic bodyparts with synthetic counterparts. Limbs, neural implants, sensors... members are often already 'enhanced' during infancy.§!\n"
  

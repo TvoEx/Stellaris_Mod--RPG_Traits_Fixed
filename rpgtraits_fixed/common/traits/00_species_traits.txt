@@ -2041,8 +2041,8 @@ trait_winter = {
 
 trait_living_planet = {
 	cost = 0
-	opposites = { "trait_titanic" "trait_tiny" "trait_broodparasite" "trait_airborne" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
-	allowed_archetypes = { BIOLOGICAL , MACHINE }
+	opposites = { "trait_robo_tiny" "trait_robo_titanic" "trait_titanic" "trait_tiny" "trait_broodparasite" "trait_airborne" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
+	allowed_archetypes = { BIOLOGICAL }
 	valid_for_all_ethics = no
 	allowed_ethics = {
 		ethic_gestalt_consciousness			# one organism
@@ -2071,6 +2071,38 @@ trait_living_planet = {
 	}
 }
 
+trait_robo_planet = {
+	cost = 0
+	opposites = { "trait_robo_tiny" "trait_robo_titanic" "trait_titanic" "trait_tiny" "trait_broodparasite" "trait_airborne" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
+	allowed_archetypes = { MACHINE }
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_gestalt_consciousness			# one organism
+	}
+
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_living_planet.dds"
+	modifier = {
+		#pop_environment_tolerance = -1		# homeworld should still have 100% hab
+		pop_fortification_defense = 4		# entire planet is one living defense army
+		tile_resource_energy_mult = 1		# quick and dirty boost, needs balancing later
+		tile_resource_minerals_mult = 1
+		pop_robot_upkeep_mult = -10
+		pop_consumer_goods_mult = -10
+		pop_robot_build_speed_mult = 10
+		pop_robot_build_cost_mult = -1
+		tile_resource_unity_mult = 1
+		#tile_resource_physics_research_mult = 1
+		#tile_resource_society_research_mult = 1
+		#tile_resource_engineering_research_mult = 1
+
+		pop_migration_speed = -10			# no migration
+		pop_resettlement_cost_mult = 100	# no resettlement
+
+	}
+}
 
 trait_cyborg = {
 	cost = 5

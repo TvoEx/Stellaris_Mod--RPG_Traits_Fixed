@@ -519,6 +519,24 @@ event = {
 }
 
 event = {
+	id = "trait.27"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robo_planet
+			}
+			add_modifier = {
+				modifier = trait_robo_planet
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
 	id = "trait.1601"
 	hide_window = yes
 	is_triggered_only = yes
@@ -572,6 +590,7 @@ planet_event = {
 				 OR = {
 						has_trait = trait_subterranean
 						has_trait = trait_living_planet
+						has_trait = trait_robo_planet
 				 }
 				 is_being_purged = no
 				 is_enslaved = no
@@ -768,7 +787,12 @@ planet_event = {
 	trigger = {
 		 AND = {
 			has_owner = yes
-			owner = { has_trait = trait_living_planet }
+			owner = { 
+				OR = {
+						has_trait = trait_living_planet
+						has_trait = trait_robo_planet
+					}
+				 }
 			#any_pop = {
 			#		NOT = { has_trait = trait_living_planet }
 			#		is_being_purged = yes
