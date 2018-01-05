@@ -318,6 +318,12 @@
  trait_titanic:0 "Titanic"
  trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
  
+ trait_robo_titanic:0 "Titanic"
+ trait_robo_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic machines, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their power requirements.§!\n"
+ 
+ trait_robo_tiny:0 "Tiny"
+ trait_robo_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This machine stands less than 5 centimetres tall. No amount of tools or machinery can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
+ 
  trait_shield_obsessed:0 "Obsessed with Shields"
  trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
  

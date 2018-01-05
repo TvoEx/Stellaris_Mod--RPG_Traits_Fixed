@@ -13,6 +13,7 @@ humans1 = {
 		plural = "PRESCRIPTED_species_plural_humans1"
 		adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUM3"
+		trait = "trait_custom_race"
 	}
 	
 	room = "personality_federation_builders_room"
@@ -79,6 +80,7 @@ humans2 = {
 		plural = "PRESCRIPTED_species_plural_humans2"
 		adjective = "PRESCRIPTED_species_adjective_humans2"
 		name_list = "HUM4"
+		trait = "trait_custom_race"
 	}
 	
 	room = "personality_hegemonic_imperialists_room"	

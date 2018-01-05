@@ -483,6 +483,42 @@ event = {
 }
 
 event = {
+	id = "trait.25"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robo_tiny
+			}
+			add_modifier = {
+				modifier = trait_robo_tiny
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
+	id = "trait.26"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robo_titanic
+			}
+			add_modifier = {
+				modifier = trait_robo_titanic
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
 	id = "trait.1601"
 	hide_window = yes
 	is_triggered_only = yes

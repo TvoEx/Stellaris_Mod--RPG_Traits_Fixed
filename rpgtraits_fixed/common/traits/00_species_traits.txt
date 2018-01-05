@@ -1815,7 +1815,7 @@ trait_titanic = {
 
 trait_tiny = {
 	cost = 4
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
+	opposites = { "trait_agrarian2" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
 	initial = yes
 	randomized = no
@@ -1836,6 +1836,49 @@ trait_tiny = {
 	}
 }
 
+trait_robo_titanic = {
+	cost = 4
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_robo_tiny" "trait_turtles" "trait_silent_observers" "trait_winter" }
+	allowed_archetypes = { MACHINE }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_titanic.dds"
+	modifier = {
+		pop_robot_upkeep_mult = 5
+		pop_robot_production_output = 5
+		army_damage_mult = 5
+		army_health = 5
+		garrison_health = 2
+		pop_fortification_defense = 2
+		pop_robot_build_speed_mult = -0.9
+		pop_robot_build_cost_mult = 5
+		pop_consumer_goods_mult = 5
+	}
+}
+
+
+
+trait_robo_tiny = {
+	cost = 4
+	opposites = { "trait_agrarian2" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_robo_titanic" }
+	allowed_archetypes = { MACHINE }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_tiny.dds"
+	modifier = {
+		pop_robot_upkeep_mult = -0.75
+		pop_robot_production_output = -0.8
+		army_damage_mult = -1
+		army_health = -1
+		garrison_health = -1
+		pop_fortification_defense = -0.75
+		pop_robot_build_speed_mult = 5
+		pop_robot_build_cost_mult = -0.8
+		pop_consumer_goods_mult = -0.8
+	}
+}
 
 trait_lithovore = {
 	cost = 0
@@ -1932,7 +1975,7 @@ trait_doom_unleashed = {
 trait_shield_obsessed = {
 	cost = 0
 	opposites = { "trait_armor_obsessed" "trait_structural_obsessed" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	initial = yes
 	randomized = no
 	modification = no
@@ -1944,7 +1987,7 @@ trait_shield_obsessed = {
 trait_armor_obsessed = {
 	cost = 0
 	opposites = { "trait_shield_obsessed" "trait_structural_obsessed" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	initial = yes
 	randomized = no
 	modification = no
@@ -1956,7 +1999,7 @@ trait_armor_obsessed = {
 trait_structural_obsessed = {
 	cost = 0
 	opposites = { "trait_shield_obsessed" "trait_armor_obsessed" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	initial = yes
 	randomized = no
 	modification = no
@@ -1999,7 +2042,7 @@ trait_winter = {
 trait_living_planet = {
 	cost = 0
 	opposites = { "trait_titanic" "trait_tiny" "trait_broodparasite" "trait_airborne" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	valid_for_all_ethics = no
 	allowed_ethics = {
 		ethic_gestalt_consciousness			# one organism
