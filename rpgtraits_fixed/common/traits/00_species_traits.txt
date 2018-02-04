@@ -1303,7 +1303,7 @@ trait_custom_testing = {
 
 # rpg bonus
 trait_bonus = {
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	cost = -99
 	initial = yes
 	randomized = no
@@ -1322,7 +1322,7 @@ trait_penalty = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty.dds"
 	opposites = { "trait_bonus" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	modifier = {
 	}
 }
@@ -1335,7 +1335,7 @@ trait_penalty2 = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty2.dds"
 	opposites = { "trait_bonus" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	modifier = {
 	}
 }
@@ -1348,7 +1348,7 @@ trait_penalty3 = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty3.dds"
 	opposites = { "trait_bonus" }
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL , MACHINE }
 	modifier = {
 		pop_government_ethic_attraction = -1
 	}
@@ -1692,8 +1692,8 @@ trait_timid = {
 
 trait_silent_observers = {
 	cost = 0
-	opposites = { "trait_turtles" "trait_titanic" "trait_tiny" }
-	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_turtles" "trait_titanic" "trait_tiny" "trait_robo_tiny" "trait_robo_titanic" }
+	allowed_archetypes = { BIOLOGICAL  , MACHINE }
 	initial = yes
 	randomized = no
 	modification = no
