@@ -182,6 +182,30 @@ trait_slow_learners = {
 	}
 }
 
+trait_traditional = {
+	cost = 1
+	initial = no
+	randomized = no
+	modification = no
+	opposites = { "trait_quarrelsome" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		tile_resource_unity_mult = 0.1
+	}
+}
+
+trait_quarrelsome = {
+	cost = -1
+	initial = no
+	randomized = no
+	modification = no
+	opposites = { "trait_traditional" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		tile_resource_unity_mult = -0.1
+	}
+}
+
 trait_very_strong = {
 	cost = 3
 	initial = no
@@ -415,7 +439,7 @@ trait_resilient = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		garrison_health = 1.0
-		pop_fortification_defense = 0.5
+		army_defense_damage_mult = 0.5
 	}
 }
 
@@ -593,5 +617,17 @@ trait_robust = {
 	modifier = {
 		pop_environment_tolerance = 0.30
 		leader_age = 50
+	}
+}
+
+trait_survivor = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pc_nuked_habitability = 0.7
+		leader_age = 10
 	}
 }

@@ -353,7 +353,7 @@ trait_frail1 = {
 
 	modifier = {
 		army_health = -0.25
-		garrison_health = -0.1
+		army_defense_damage_mult = -0.1
 		pop_environment_tolerance = -0.05
 	}
 }
@@ -366,7 +366,7 @@ trait_frail2 = {
 
 	modifier = {
 		army_health = -0.5
-		garrison_health = -0.25
+		army_defense_damage_mult = -0.25
 		pop_environment_tolerance = -0.1
 	}
 }
@@ -379,7 +379,7 @@ trait_frail3 = {
 
 	modifier = {
 		army_health = -0.75
-		garrison_health = -0.5
+		army_defense_damage_mult = -0.5
 		pop_environment_tolerance = -0.2
 	}
 }
@@ -578,7 +578,6 @@ trait_weakwilled1 = {
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_fortification_defense = -0.25
 		army_damage_mult = -0.25
 		army_morale = -0.25
 		army_health = -0.25
@@ -591,7 +590,6 @@ trait_weakwilled2 = {
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_fortification_defense = -0.5
 		army_damage_mult = -0.33
 		army_morale = -0.5
 		army_health = -0.33
@@ -604,7 +602,6 @@ trait_weakwilled3 = {
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_fortification_defense = -0.75
 		army_damage_mult = -0.5
 		army_morale = -0.75
 		army_health = -0.5
@@ -1180,10 +1177,9 @@ trait_resilient1 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_resilient1.dds"
 	modifier = {
-		garrison_health = 1.0
+		army_defense_damage_mult = 1.0
 		army_damage_mult = 0.1
 		army_morale = 0.25
-		pop_fortification_defense = 0.5
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1193,10 +1189,9 @@ trait_resilient2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_resilient2.dds"
 	modifier = {
-		garrison_health = 2.5
+		army_defense_damage_mult = 2.5
 		army_damage_mult = 0.1
 		army_morale = 1
-		pop_fortification_defense = 1
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" trait_resilient1 "trait_resilient3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1209,10 +1204,9 @@ trait_resilient3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_resilient3.dds"
 	modifier = {
-		garrison_health = 5.0
+		army_defense_damage_mult = 5.0
 		army_damage_mult = 0.1
 		army_morale = 8
-		pop_fortification_defense = 2
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" trait_resilient1 }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1410,8 +1404,7 @@ trait_genemod_lobotomized = {
 		tile_resource_society_research_mult = -4
 		tile_resource_unity_mult = -4
 		army_damage_mult = -4
-		garrison_health = -4
-		pop_fortification_defense = -4
+		army_defense_damage_mult = -4
 		species_leader_exp_gain = -10
 		}
 		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_enraged" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
@@ -1482,8 +1475,7 @@ trait_nerve_stapled = {
 		tile_resource_engineering_research_mult = -0.75
 		tile_resource_society_research_mult = -20
 		tile_resource_unity_mult = -2
-		garrison_health = -2.0
-		pop_fortification_defense = -2.0
+		army_defense_damage_mult = -2.0
 		army_damage_mult = -2.0
 		species_leader_exp_gain = -10
 	}
@@ -1501,8 +1493,7 @@ trait_crippled = {
 		pop_other_species_happiness = -0.05
 		tile_resource_energy_mult = -0.25
 		tile_resource_minerals_mult = -0.25
-		garrison_health = -2.0
-		pop_fortification_defense = -2.0
+		army_defense_damage_mult = -2.0
 		army_damage_mult = -2.0
 		pop_environment_tolerance = -0.1
 	}
@@ -1579,8 +1570,7 @@ trait_turtles = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_turtles.dds"
 	modifier = {
-		garrison_health = 1
-		pop_fortification_defense = 2
+		army_defense_damage_mult = 1
 	}
 }
 
@@ -1668,9 +1658,8 @@ trait_independent = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_independent.dds"
 	modifier = {
-			garrison_health = 2
+			army_defense_damage_mult = 2
 			pop_government_ethic_attraction = -0.5
-			pop_fortification_defense = 0.75
 	}
 }
 
@@ -1683,9 +1672,8 @@ trait_timid = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_timid.dds"
 	modifier = {
-			garrison_health = -0.75
+			army_defense_damage_mult = -0.75
 			pop_government_ethic_attraction = 0.5
-			pop_fortification_defense = -0.75
 	}
 }
 
@@ -1774,8 +1762,7 @@ trait_subterranean = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_subterranean.dds"
 	modifier = {
-		pop_fortification_defense = 2
-		garrison_health = 1
+		army_defense_damage_mult = 1
 		tile_resource_minerals_mult = 0.25
 	}
 }
@@ -1803,8 +1790,7 @@ trait_titanic = {
 		tile_resource_food_mult = 5
 		army_damage_mult = 5
 		army_health = 5
-		garrison_health = 2
-		pop_fortification_defense = 2
+		army_defense_damage_mult = 2
 		#pop_growth_req_mult = 5
 		pop_growth_speed = -0.9
 		pop_consumer_goods_mult = 5
@@ -1828,8 +1814,7 @@ trait_tiny = {
 		tile_resource_food_mult = -0.8
 		army_damage_mult = -1
 		army_health = -1
-		garrison_health = -1
-		pop_fortification_defense = -0.75
+		army_defense_damage_mult = -1
 		#pop_growth_req_mult = -0.8
 		pop_growth_speed = 5
 		pop_consumer_goods_mult = -0.8
@@ -1849,8 +1834,7 @@ trait_robo_titanic = {
 		pop_robot_production_output = 5
 		army_damage_mult = 5
 		army_health = 5
-		garrison_health = 2
-		pop_fortification_defense = 2
+		army_defense_damage_mult = 2
 		pop_robot_build_speed_mult = -0.9
 		pop_robot_build_cost_mult = 5
 		pop_consumer_goods_mult = 5
@@ -1872,8 +1856,7 @@ trait_robo_tiny = {
 		pop_robot_production_output = -0.8
 		army_damage_mult = -1
 		army_health = -1
-		garrison_health = -1
-		pop_fortification_defense = -0.75
+		army_defense_damage_mult = -1
 		pop_robot_build_speed_mult = 5
 		pop_robot_build_cost_mult = -0.8
 		pop_consumer_goods_mult = -0.8
@@ -1928,10 +1911,9 @@ trait_positive_doom = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_positive_doom.dds"
 	modifier = {
-		garrison_health = -2
+		army_defense_damage_mult = -2
 		army_morale = -2
 		army_damage_mult = -2
-		pop_fortification_defense = -2
 		pop_happiness = -0.2
 	}
 }
@@ -1944,10 +1926,9 @@ trait_negative_doom = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
 	modifier = {
-		garrison_health = 2
+		army_defense_damage_mult = 2
 		army_morale = 2
 		army_damage_mult = 2
-		pop_fortification_defense = 2
 		pop_happiness = 0.2
 	}
 }
@@ -1960,10 +1941,9 @@ trait_doom_unleashed = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
 	modifier = {
-		garrison_health = -2
+		army_defense_damage_mult = -2
 		army_morale = -2
 		army_damage_mult = -2
-		pop_fortification_defense = -20
 		pop_happiness = -0.5
 		pop_other_species_happiness = -1
 		pop_food_req_mult = 5
@@ -2054,7 +2034,7 @@ trait_living_planet = {
 	icon = "gfx/interface/icons/traits/trait_living_planet.dds"
 	modifier = {
 		#pop_environment_tolerance = -1		# homeworld should still have 100% hab
-		pop_fortification_defense = 4		# entire planet is one living defense army
+		army_defense_damage_mult = 4		# entire planet is one living defense army
 		tile_resource_energy_mult = 1		# quick and dirty boost, needs balancing later
 		tile_resource_minerals_mult = 1
 		pop_food_req_mult = -10
@@ -2086,7 +2066,7 @@ trait_robo_planet = {
 	icon = "gfx/interface/icons/traits/trait_living_planet.dds"
 	modifier = {
 		#pop_environment_tolerance = -1		# homeworld should still have 100% hab
-		pop_fortification_defense = 4		# entire planet is one living defense army
+		army_defense_damage_mult = 4		# entire planet is one living defense army
 		tile_resource_energy_mult = 1		# quick and dirty boost, needs balancing later
 		tile_resource_minerals_mult = 1
 		pop_robot_upkeep_mult = -10
@@ -2143,7 +2123,7 @@ trait_synthetic_lifeform = {
 		tile_resource_minerals_mult = 1.0
 		army_damage_mult = 1.0
 		army_health = 1
-		garrison_health = 1.0
+		army_defense_damage_mult = 1.0
 		
 		pop_consumer_goods_mult = -0.5
 		pop_food_req_mult = -100
