@@ -6,4 +6,4 @@ tags={
 }
 picture="rpgtraits.jpg"
 remote_file_id="1235220661"
-supported_version="1.9.1"
+supported_version="2.0.0"
